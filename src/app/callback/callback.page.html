@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>callback</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  {{href}}
+  <br>
+  <ion-button (click)="open()">InAPp</ion-button>
+  <ion-button color="secondary" (click)="onClickProduct()">
+    <ion-label color="primary">Products</ion-label>
+  </ion-button>
+
+  <ion-button color="secondary" (click)="onClickSurvey()">
+    <ion-label color="primary">Survey</ion-label>
+  </ion-button>
+
+  <ion-button color="secondary" (click)="onClickActionPlan()">
+    <ion-label color="primary">Action Plan</ion-label>
+  </ion-button>
+  <ion-button (click)="openMyVideo('rhQmy93LZH8')">Open Video</ion-button>
+</ion-content>

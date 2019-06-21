@@ -1,0 +1,55 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Take Action
+    </ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content *ngIf="records">
+  <ion-card>
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <ion-card-title> Name</ion-card-title>
+          <div>
+            {{ records[0].Name}}
+          </div>
+          <div>
+            {{ records[1].Name}}
+          </div>
+          <div>
+            {{ records[2].Name}}
+          </div>
+        </ion-col>
+        <ion-col>
+          <ion-card-title>Type</ion-card-title>
+          <div>
+            {{records[0].Id}}
+          </div>
+          <div>
+            {{records[1].Id}}
+          </div>
+          <div>
+            {{records[2].Id}}
+          </div>
+        </ion-col>
+        <ion-col>
+          <ion-card-title>Url</ion-card-title>
+          <div>
+            {{records[0].attributes.url}}
+          </div>
+          <div>
+            {{records[1].attributes.url}}
+          </div>
+          <div>
+            {{records[2].attributes.url}}
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-card>
+</ion-content>
